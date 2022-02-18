@@ -1,0 +1,22 @@
+arduino_arm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - base_link1_joint
+    - link1_link2_joint
+    - link2_link3_joint
+  gains:
+    base_link1_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    link1_link2_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    link2_link3_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

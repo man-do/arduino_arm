@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/maverick/arduino_arm_ws/install/setup.sh

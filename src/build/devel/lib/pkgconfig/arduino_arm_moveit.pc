@@ -1,0 +1,8 @@
+prefix=/home/maverick/arduino_arm_ws/src/build/devel
+
+Name: arduino_arm_moveit
+Description: Description of arduino_arm_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

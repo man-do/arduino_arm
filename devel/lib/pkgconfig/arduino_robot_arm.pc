@@ -1,0 +1,8 @@
+prefix=/home/maverick/arduino_arm_ws/devel
+
+Name: arduino_robot_arm
+Description: Description of arduino_robot_arm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

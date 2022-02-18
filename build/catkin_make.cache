@@ -1,0 +1,2 @@
+arduino_arm:arduino_arm_control:arduino_arm_moveit:ros_control_boilerplate
+-DCATKIN_DEVEL_PREFIX=/home/maverick/arduino_arm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/maverick/arduino_arm_ws/install -G Unix Makefiles

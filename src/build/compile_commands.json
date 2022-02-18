@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest -g -fPIC -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest -g -fPIC -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest -g -fPIC -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest -g -fPIC -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -std=c++11 -o ros_control_boilerplate/CMakeFiles/ros_control_boilerplate_sim_hw_main.dir/src/sim_hw_main.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/sim_hw_main.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/sim_hw_main.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -std=c++11 -o ros_control_boilerplate/CMakeFiles/ros_control_boilerplate_keyboard_teleop.dir/src/tools/keyboard_teleop.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/keyboard_teleop.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/keyboard_teleop.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -Dsim_hw_interface_EXPORTS -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -fPIC -std=c++11 -o ros_control_boilerplate/CMakeFiles/sim_hw_interface.dir/src/sim_hw_interface.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/sim_hw_interface.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/sim_hw_interface.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -Dcsv_to_controller_EXPORTS -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -fPIC -std=c++11 -o ros_control_boilerplate/CMakeFiles/csv_to_controller.dir/src/tools/csv_to_controller.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/csv_to_controller.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/csv_to_controller.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -Dgeneric_hw_control_loop_EXPORTS -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -fPIC -std=c++11 -o ros_control_boilerplate/CMakeFiles/generic_hw_control_loop.dir/src/generic_hw_control_loop.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/generic_hw_control_loop.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/generic_hw_control_loop.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -Dgeneric_hw_interface_EXPORTS -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -fPIC -std=c++11 -o ros_control_boilerplate/CMakeFiles/generic_hw_interface.dir/src/generic_hw_interface.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/generic_hw_interface.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/generic_hw_interface.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -std=c++11 -o ros_control_boilerplate/CMakeFiles/ros_control_boilerplate_test_trajectory.dir/src/tools/test_trajectory.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/test_trajectory.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/test_trajectory.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -Dcontroller_to_csv_EXPORTS -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -fPIC -std=c++11 -o ros_control_boilerplate/CMakeFiles/controller_to_csv.dir/src/tools/controller_to_csv.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/controller_to_csv.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/controller_to_csv.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -std=c++11 -o ros_control_boilerplate/CMakeFiles/ros_control_boilerplate_controller_to_csv_main.dir/src/tools/controller_to_csv_main.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/controller_to_csv_main.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/controller_to_csv_main.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -std=c++11 -o ros_control_boilerplate/CMakeFiles/ros_control_boilerplate_csv_to_controller_main.dir/src/tools/csv_to_controller_main.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/csv_to_controller_main.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/src/tools/csv_to_controller_main.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/rrbot_control/include -g -std=c++11 -o ros_control_boilerplate/rrbot_control/CMakeFiles/rrbot_hw_main.dir/src/rrbot_hw_main.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/rrbot_control/src/rrbot_hw_main.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/rrbot_control/src/rrbot_hw_main.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ros_control_boilerplate\\\" -Drrbot_hw_interface_EXPORTS -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/rrbot_control/include -g -fPIC -std=c++11 -o ros_control_boilerplate/rrbot_control/CMakeFiles/rrbot_hw_interface.dir/src/rrbot_hw_interface.cpp.o -c /home/maverick/arduino_arm_ws/src/ros_control_boilerplate/rrbot_control/src/rrbot_hw_interface.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/rrbot_control/src/rrbot_hw_interface.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arduino_arm_control\\\" -I/home/maverick/arduino_arm_ws/src/build/devel/include -I/home/maverick/arduino_arm_ws/src/arduino_arm_control/include -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -o arduino_arm_control/CMakeFiles/arduino_arm_hw_main.dir/src/arduino_arm_hw_interface.cpp.o -c /home/maverick/arduino_arm_ws/src/arduino_arm_control/src/arduino_arm_hw_interface.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/arduino_arm_control/src/arduino_arm_hw_interface.cpp"
+},
+{
+  "directory": "/home/maverick/arduino_arm_ws/src/build",
+  "command": "/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"arduino_arm_control\\\" -I/home/maverick/arduino_arm_ws/src/build/devel/include -I/home/maverick/arduino_arm_ws/src/arduino_arm_control/include -I/home/maverick/arduino_arm_ws/src/ros_control_boilerplate/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -g -o arduino_arm_control/CMakeFiles/arduino_arm_hw_main.dir/src/arduino_arm_hw_main.cpp.o -c /home/maverick/arduino_arm_ws/src/arduino_arm_control/src/arduino_arm_hw_main.cpp",
+  "file": "/home/maverick/arduino_arm_ws/src/arduino_arm_control/src/arduino_arm_hw_main.cpp"
+}
+]

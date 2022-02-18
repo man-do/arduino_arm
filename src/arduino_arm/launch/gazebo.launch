@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="model" default="$(find arduino_arm)/urdf/arduino_arm.xacro" />
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+
+    <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam file="$(find arduino_arm)/config/arduino_arm_control.yaml" command="load" />
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="debug" value="false" />
+        <arg name="gui" value="true" />
+        <arg name="paused" value="false" />
+        <arg name="use_sim_time" value="true" />
+        <arg name="headless" value="false" />
+        <arg name="verbose" value="true" />
+    </include>
+
+    <!--Launch Gazebo Simulator-->
+    <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" 
+        args="-urdf -param robot_description -model arduino_arm" 
+        output="screen" />
+
+    <!-- Load the controllers -->
+    <node name="controller_spawner" pkg="controller_manager" 
+        type="spawner" 
+        respawn="false" 
+        output="screen" 
+        ns="/arduino_arm" 
+        args="
+            joint1_position_controller 
+            joint2_position_controller 
+            joint3_position_controller 
+            joint_state_controller" />
+
+    <!-- convert joint states to TF transforms for rviz, etc -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+        <remap from="/joint_states" to="/arduino_arm/joint_states" />
+    </node>
+
+</launch>
