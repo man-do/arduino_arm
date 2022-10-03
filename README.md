@@ -4,4 +4,4 @@ A small 3 joint robot arm built by by an Arduino Uno and 3 servos is controlled 
 Not working great, just working.
 
 
-![alt text](https://github.com/mando/arduino_arm/blob/main/imgs/rest_pose.gif "")
+![alt text](https://github.com/mando/arduino_arm/blob/main/imgs/rest_pose.gif "Robot moving to rest position")
