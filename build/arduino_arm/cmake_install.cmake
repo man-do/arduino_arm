@@ -1,8 +1,8 @@
-# Install script for directory: /home/maverick/arduino_arm_ws/src/arduino_arm
+# Install script for directory: /home/maverick/personal_projects/arduino_arm/src/arduino_arm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maverick/arduino_arm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/maverick/personal_projects/arduino_arm/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,23 +37,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maverick/arduino_arm_ws/build/arduino_arm/catkin_generated/installspace/arduino_arm.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/maverick/personal_projects/arduino_arm/build/arduino_arm/catkin_generated/installspace/arduino_arm.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_arm/cmake" TYPE FILE FILES
-    "/home/maverick/arduino_arm_ws/build/arduino_arm/catkin_generated/installspace/arduino_armConfig.cmake"
-    "/home/maverick/arduino_arm_ws/build/arduino_arm/catkin_generated/installspace/arduino_armConfig-version.cmake"
+    "/home/maverick/personal_projects/arduino_arm/build/arduino_arm/catkin_generated/installspace/arduino_armConfig.cmake"
+    "/home/maverick/personal_projects/arduino_arm/build/arduino_arm/catkin_generated/installspace/arduino_armConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_arm" TYPE FILE FILES "/home/maverick/arduino_arm_ws/src/arduino_arm/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_arm" TYPE FILE FILES "/home/maverick/personal_projects/arduino_arm/src/arduino_arm/package.xml")
 endif()
 

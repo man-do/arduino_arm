@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/maverick/arduino_arm_ws/devel/lib/librrbot_hw_interface.pdb"
-  "/home/maverick/arduino_arm_ws/devel/lib/librrbot_hw_interface.so"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/librrbot_hw_interface.pdb"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/librrbot_hw_interface.so"
   "CMakeFiles/rrbot_hw_interface.dir/src/rrbot_hw_interface.cpp.o"
-  "CMakeFiles/rrbot_hw_interface.dir/src/rrbot_hw_interface.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

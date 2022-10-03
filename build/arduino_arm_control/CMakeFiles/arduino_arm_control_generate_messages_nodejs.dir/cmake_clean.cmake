@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/maverick/arduino_arm_ws/devel/share/gennodejs/ros/arduino_arm_control/msg/jointCmd.js"
-  "/home/maverick/arduino_arm_ws/devel/share/gennodejs/ros/arduino_arm_control/msg/jointState.js"
+  "/home/maverick/personal_projects/arduino_arm/devel/share/gennodejs/ros/arduino_arm_control/msg/jointCmd.js"
+  "/home/maverick/personal_projects/arduino_arm/devel/share/gennodejs/ros/arduino_arm_control/msg/jointState.js"
   "CMakeFiles/arduino_arm_control_generate_messages_nodejs"
 )
 

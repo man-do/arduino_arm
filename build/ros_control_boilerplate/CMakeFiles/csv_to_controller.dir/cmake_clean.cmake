@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/maverick/arduino_arm_ws/devel/lib/libcsv_to_controller.pdb"
-  "/home/maverick/arduino_arm_ws/devel/lib/libcsv_to_controller.so"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/libcsv_to_controller.pdb"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/libcsv_to_controller.so"
   "CMakeFiles/csv_to_controller.dir/src/tools/csv_to_controller.cpp.o"
-  "CMakeFiles/csv_to_controller.dir/src/tools/csv_to_controller.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

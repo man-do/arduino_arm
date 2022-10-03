@@ -1,67 +1,92 @@
 #include <Servo.h>
-#include <ServoEasing.hpp>
-#include <ros.h>
-#include <std_msgs/UInt16.h>
-#include <std_msgs/Float32MultiArray.h>
-#include <sensor_msgs/JointState.h>
 
-
-ServoEasing servo9;
-ServoEasing servo10;
-ServoEasing servo11;
+Servo servo9;
+Servo servo10;
+Servo servo11;
 
 #define HOME_ANGLE 90
 #define JOINT_VEL_FAST 60
-#define JOINT_VEL__SLOW 30
+#define JOINT_VEL_SLOW 30
 
-void servos_cb(const sensor_msgs::JointState& cmd_msg){
-
-  Serial.println(cmd_msg.position[0]);
-  
-}
-
-ros::NodeHandle nh;
-
-ros::Subscriber<sensor_msgs::JointState> jointCmdSub("/arduino/jointCmd", servos_cb);
-
-sensor_msgs::JointState state_msg;
-
-ros::Publisher jointStatePub("arduino/jointState", &state_msg); 
-
-void setup() {
-  Serial.begin(115200);
-  
-  /*  Joint pins
-   *  base_link1_joint 9
-   * link1_link2_joint 10
-   * link2_link3_joint 11
-  */
-
-  servo9.attach(9, HOME_ANGLE);
-  servo10.attach(10, HOME_ANGLE);
-  servo11.attach(11, HOME_ANGLE);
+bool servos_moving = 0;
+char fb_s9[]= "AAA";
+char fb_s10[]= "AAA";
+char fb_s11[] = "AAA";
 
 
-  nh.advertise(jointStatePub);
-  nh.subscribe(jointCmdSub);
-}
+// LUT of char representation of numbers
+const char nr_LUT[10] = {'0', '1', '2',
+                         '3', '4', '5',
+                         '6', '7', '8', '9'};
 
-void loop() {
-  //servo9.startEaseTo(180, JOINT_VEL_FAST);
-  //servo10.startEaseTo(0, JOINT_VEL_FAST);
-  //Serial.print( servo9.getCurrentAngle());
-  //Serial.print(",");
-  //Serial.println( servo10.getCurrentAngle());
-
-  nh.spinOnce();
-  delay(1);
-}
-
-double radiansToDegrees(float position_radians)
+void setup()
 {
+  Serial.begin(115200);
+  servo9.attach(9);
+  servo10.attach(10);
+  servo11.attach(11);
+}
 
-  position_radians = position_radians + 1.6;
+void parseToString(char *input, int number)
+{
+  // FILL WITH ZEROS
+  // PARSE INT TO STRING
+  if (input < 100)
+  {
+    input[0] = nr_LUT[0];
+    input[1] = nr_LUT[number / 10];
+    input[2] = nr_LUT[number % 10];
+  }
+  else
+  {
+    input[0] = nr_LUT[number / 100];
+    input[1] = nr_LUT[number / 10 % 10];
+    input[2] = nr_LUT[number % 10];
+  }
+}
 
-  return position_radians * 57.2958;
+void startEaseToAllServos(String string_cmd)
+{
+  long angle11 = string_cmd.substring(0, 4).toInt();
+  long angle10 = string_cmd.substring(4, 8).toInt();
+  long angle9 = string_cmd.substring(8, 12).toInt();
 
+  servo9.write(angle9);
+  servo10.write(angle10);
+  servo11.write(angle11);
+}
+
+void fb_positions()
+{
+  // GIVE ANGLE FEEDBACK
+    uint8_t fb9 = servo9.read();
+    uint8_t fb10 = servo10.read();
+    uint8_t fb11 = servo11.read();
+        
+    parseToString(fb_s9, fb9);
+    parseToString(fb_s10, fb10);
+    parseToString(fb_s11, fb11);
+
+    char result[12];
+    sprintf(result, "%s,%s,%s\n", fb_s9, fb_s10 , fb_s11 );
+    Serial.write(result);
+}
+
+String inputString;
+String out = String();
+char inChar;
+
+void loop()
+{
+  if (Serial.available() > 11)
+  {
+      inChar = Serial.read();
+      if (inChar == '<')
+      {
+        inputString = Serial.readStringUntil('>');
+        startEaseToAllServos(inputString);
+      } 
+      fb_positions();
+     
+  } 
 }

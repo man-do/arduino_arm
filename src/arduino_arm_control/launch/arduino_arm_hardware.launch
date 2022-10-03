@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <launch>
+
+      <!-- GDB functionality -->
+    <arg name="debug" default="false" />
+    <arg unless="$(arg debug)" name="launch_prefix" value="" />
+    <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
  
   <!-- RVIZ  -->
     
@@ -10,17 +15,23 @@
  
      <!-- Show in Rviz  -->
      <node name="rviz" pkg="rviz" type="rviz" args="-d $(find arduino_arm_moveit)/launch/moveit.rviz"/>
- 
- 
- 
+  
   <!-- CORE  -->
  
    <!-- Load controller settings  -->
-     <rosparam file="$(find arduino_arm_control)/config/arduino_arm_controllers.yaml" command="load"/>
+     <rosparam 
+     file="$(find arduino_arm_control)/config/arduino_arm_controllers.yaml" 
+     command="load"/>
  
  
      <!-- Load hardware interface -->
-     <node name="arduino_arm_hw_main" pkg="arduino_arm_control" type="arduino_arm_hw_main" output="screen"/> 
+     <node 
+        name="arduino_arm_hw_main" 
+        pkg="arduino_arm_control" 
+        type="arduino_arm_hw_main" 
+        output="screen" 
+        launch-prefix="$(arg launch_prefix)"
+         /> 
  
  
      <!-- Load scene -->
@@ -33,11 +44,13 @@
      type="controller_manager" 
      respawn="false"
      output="screen"
-     ns="move_group" 
      args="spawn joint_state_controller position_trajectory_controller" />
  
      <!-- Convert joint states to /tf tranforms -->
-     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+     <node name="robot_state_publisher" 
+     pkg="robot_state_publisher" 
+     type="robot_state_publisher"
+     /> 
  
      <!-- 
          ns="move_group"
@@ -54,7 +67,8 @@
  
  
      <!-- Remap follow_joint_trajectory -->
-     <remap from="/joint_trajectory_action" to="/arduino_arm_controller/follow_joint_trajectory"/>
+     <!-- <remap from="move_group/position_trajectory_controller/follow_joint_trajectory"  -->
+     <!-- to="move_group/arduino_arm_controller/follow_joint_trajectory"/>   -->
    
  
      <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
@@ -65,17 +79,20 @@
 
  <!-- HARDWARE -->
  
-     <!-- rosserial to teensy -->
+     <!-- rosserial to arduino
      <node pkg="rosserial_server" type="serial_node" name="rosserial_server_main" output="screen" respawn="true"> 
          <rosparam>
              port: /dev/ttyACM0
              baud: 115200
              spin_rate: 0.5
- 
          </rosparam>
-     </node>
- 
- 
-  
+     </node>   -->
+
+     <node 
+        name="serial_comm_node" 
+        pkg="arduino_arm_control" 
+        type="serial_comm_node.py" 
+        output="screen"
+      />
  
  </launch>

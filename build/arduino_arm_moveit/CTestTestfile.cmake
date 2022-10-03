@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/maverick/arduino_arm_ws/src/arduino_arm_moveit
-# Build directory: /home/maverick/arduino_arm_ws/build/arduino_arm_moveit
+# Source directory: /home/maverick/personal_projects/arduino_arm/src/arduino_arm_moveit
+# Build directory: /home/maverick/personal_projects/arduino_arm/build/arduino_arm_moveit
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

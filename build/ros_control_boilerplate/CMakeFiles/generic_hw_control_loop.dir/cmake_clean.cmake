@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/maverick/arduino_arm_ws/devel/lib/libgeneric_hw_control_loop.pdb"
-  "/home/maverick/arduino_arm_ws/devel/lib/libgeneric_hw_control_loop.so"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/libgeneric_hw_control_loop.pdb"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/libgeneric_hw_control_loop.so"
   "CMakeFiles/generic_hw_control_loop.dir/src/generic_hw_control_loop.cpp.o"
-  "CMakeFiles/generic_hw_control_loop.dir/src/generic_hw_control_loop.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/maverick/arduino_arm_ws/src
+# Install script for directory: /home/maverick/personal_projects/arduino_arm/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/maverick/arduino_arm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/maverick/personal_projects/arduino_arm/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,11 +37,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -54,92 +49,96 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/maverick/arduino_arm_ws/install/_setup_util.py")
+   "/home/maverick/personal_projects/arduino_arm/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/maverick/arduino_arm_ws/install" TYPE PROGRAM FILES "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/maverick/personal_projects/arduino_arm/install" TYPE PROGRAM FILES "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/maverick/arduino_arm_ws/install/env.sh")
+   "/home/maverick/personal_projects/arduino_arm/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/maverick/arduino_arm_ws/install" TYPE PROGRAM FILES "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/maverick/personal_projects/arduino_arm/install" TYPE PROGRAM FILES "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/maverick/arduino_arm_ws/install/setup.bash;/home/maverick/arduino_arm_ws/install/local_setup.bash")
+   "/home/maverick/personal_projects/arduino_arm/install/setup.bash;/home/maverick/personal_projects/arduino_arm/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/maverick/arduino_arm_ws/install" TYPE FILE FILES
-    "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/maverick/personal_projects/arduino_arm/install" TYPE FILE FILES
+    "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/setup.bash"
+    "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/maverick/arduino_arm_ws/install/setup.sh;/home/maverick/arduino_arm_ws/install/local_setup.sh")
+   "/home/maverick/personal_projects/arduino_arm/install/setup.sh;/home/maverick/personal_projects/arduino_arm/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/maverick/arduino_arm_ws/install" TYPE FILE FILES
-    "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/maverick/personal_projects/arduino_arm/install" TYPE FILE FILES
+    "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/setup.sh"
+    "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/maverick/arduino_arm_ws/install/setup.zsh;/home/maverick/arduino_arm_ws/install/local_setup.zsh")
+   "/home/maverick/personal_projects/arduino_arm/install/setup.zsh;/home/maverick/personal_projects/arduino_arm/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/maverick/arduino_arm_ws/install" TYPE FILE FILES
-    "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/maverick/personal_projects/arduino_arm/install" TYPE FILE FILES
+    "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/setup.zsh"
+    "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/maverick/arduino_arm_ws/install/.rosinstall")
+   "/home/maverick/personal_projects/arduino_arm/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/maverick/arduino_arm_ws/install" TYPE FILE FILES "/home/maverick/arduino_arm_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/maverick/personal_projects/arduino_arm/install" TYPE FILE FILES "/home/maverick/personal_projects/arduino_arm/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/maverick/arduino_arm_ws/build/gtest/cmake_install.cmake")
-  include("/home/maverick/arduino_arm_ws/build/arduino_arm_moveit/cmake_install.cmake")
-  include("/home/maverick/arduino_arm_ws/build/arduino_arm/cmake_install.cmake")
-  include("/home/maverick/arduino_arm_ws/build/ros_control_boilerplate/cmake_install.cmake")
-  include("/home/maverick/arduino_arm_ws/build/arduino_arm_control/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/gtest/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/arduino_arm_moveit/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/gazebo_ros_demos/rrbot_control/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/gazebo_ros_demos/rrbot_description/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/gazebo_ros_demos/rrbot_gazebo/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/arduino_arm/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/gazebo_ros_demos/gazebo_tutorials/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/ros_control_boilerplate/cmake_install.cmake")
+  include("/home/maverick/personal_projects/arduino_arm/build/arduino_arm_control/cmake_install.cmake")
 
 endif()
 
@@ -151,5 +150,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/maverick/arduino_arm_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/maverick/personal_projects/arduino_arm/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

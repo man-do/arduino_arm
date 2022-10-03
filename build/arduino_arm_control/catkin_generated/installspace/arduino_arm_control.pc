@@ -1,4 +1,4 @@
-prefix=/home/maverick/arduino_arm_ws/install
+prefix=/home/maverick/personal_projects/arduino_arm/install
 
 Name: arduino_arm_control
 Description: Description of arduino_arm_control

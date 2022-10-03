@@ -1,4 +1,4 @@
-prefix=/home/maverick/arduino_arm_ws/devel
+prefix=/home/maverick/personal_projects/arduino_arm/devel
 
 Name: arduino_arm
 Description: Description of arduino_arm

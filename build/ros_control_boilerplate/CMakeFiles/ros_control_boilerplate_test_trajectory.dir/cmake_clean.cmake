@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/maverick/arduino_arm_ws/devel/lib/ros_control_boilerplate/test_trajectory"
-  "/home/maverick/arduino_arm_ws/devel/lib/ros_control_boilerplate/test_trajectory.pdb"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/ros_control_boilerplate/test_trajectory"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/ros_control_boilerplate/test_trajectory.pdb"
   "CMakeFiles/ros_control_boilerplate_test_trajectory.dir/src/tools/test_trajectory.cpp.o"
-  "CMakeFiles/ros_control_boilerplate_test_trajectory.dir/src/tools/test_trajectory.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

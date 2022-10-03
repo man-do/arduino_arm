@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/maverick/arduino_arm_ws/devel/lib/python3/dist-packages/arduino_arm_control/msg/__init__.py"
-  "/home/maverick/arduino_arm_ws/devel/lib/python3/dist-packages/arduino_arm_control/msg/_jointCmd.py"
-  "/home/maverick/arduino_arm_ws/devel/lib/python3/dist-packages/arduino_arm_control/msg/_jointState.py"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/python3/dist-packages/arduino_arm_control/msg/__init__.py"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/python3/dist-packages/arduino_arm_control/msg/_jointCmd.py"
+  "/home/maverick/personal_projects/arduino_arm/devel/lib/python3/dist-packages/arduino_arm_control/msg/_jointState.py"
   "CMakeFiles/arduino_arm_control_generate_messages_py"
 )
 

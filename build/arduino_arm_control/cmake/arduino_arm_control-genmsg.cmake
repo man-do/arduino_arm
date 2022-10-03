@@ -2,7 +2,7 @@
 
 message(STATUS "arduino_arm_control: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iarduino_arm_control:/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg;-Icontrol_msgs:/opt/ros/noetic/share/control_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iarduino_arm_control:/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg;-Icontrol_msgs:/opt/ros/noetic/share/control_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(arduino_arm_control_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
 add_custom_target(_arduino_arm_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arduino_arm_control" "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arduino_arm_control" "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" ""
 )
 
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
 add_custom_target(_arduino_arm_control_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arduino_arm_control" "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arduino_arm_control" "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" ""
 )
 
 #
@@ -34,13 +34,13 @@ add_custom_target(_arduino_arm_control_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arduino_arm_control
 )
 _generate_msg_cpp(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arduino_arm_control
@@ -60,9 +60,9 @@ add_custom_target(arduino_arm_control_generate_messages_cpp
 add_dependencies(arduino_arm_control_generate_messages arduino_arm_control_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_cpp _arduino_arm_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_cpp _arduino_arm_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,13 +75,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arduino_arm_control_generate_messag
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arduino_arm_control
 )
 _generate_msg_eus(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arduino_arm_control
@@ -101,9 +101,9 @@ add_custom_target(arduino_arm_control_generate_messages_eus
 add_dependencies(arduino_arm_control_generate_messages arduino_arm_control_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_eus _arduino_arm_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_eus _arduino_arm_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,13 +116,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arduino_arm_control_generate_messag
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arduino_arm_control
 )
 _generate_msg_lisp(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arduino_arm_control
@@ -142,9 +142,9 @@ add_custom_target(arduino_arm_control_generate_messages_lisp
 add_dependencies(arduino_arm_control_generate_messages arduino_arm_control_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_lisp _arduino_arm_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_lisp _arduino_arm_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,13 +157,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arduino_arm_control_generate_messag
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arduino_arm_control
 )
 _generate_msg_nodejs(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arduino_arm_control
@@ -183,9 +183,9 @@ add_custom_target(arduino_arm_control_generate_messages_nodejs
 add_dependencies(arduino_arm_control_generate_messages arduino_arm_control_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_nodejs _arduino_arm_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_nodejs _arduino_arm_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,13 +198,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS arduino_arm_control_generate_messag
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arduino_arm_control
 )
 _generate_msg_py(arduino_arm_control
-  "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg"
+  "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arduino_arm_control
@@ -224,9 +224,9 @@ add_custom_target(arduino_arm_control_generate_messages_py
 add_dependencies(arduino_arm_control_generate_messages arduino_arm_control_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointCmd.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_py _arduino_arm_control_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/maverick/arduino_arm_ws/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
+get_filename_component(_filename "/home/maverick/personal_projects/arduino_arm/src/arduino_arm_control/msg/jointState.msg" NAME_WE)
 add_dependencies(arduino_arm_control_generate_messages_py _arduino_arm_control_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
