@@ -1,8 +1,0 @@
-prefix=/home/maverick/arduino_arm_ws/devel
-
-Name: arduino_robot_arm_moveit
-Description: Description of arduino_robot_arm_moveit
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
